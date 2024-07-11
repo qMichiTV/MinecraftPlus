@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraftplus",
+	"version": "${version}",
+	"name": "Minecraft Plus",
+	"description": "This is the official MinecraftPlus Mod, have fun",
+	"authors": [
+		"qMichi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.qmichi.minecraftplus.MinecraftPlus"
+		],
+		"client": [
+			"de.qmichi.minecraftplus.MinecraftPlusClient"
+		],
+		"fabric-datagen": [
+			"de.qmichi.minecraftplus.MinecraftPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"minecraftplus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
